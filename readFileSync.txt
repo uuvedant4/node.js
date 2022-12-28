@@ -1,0 +1,1 @@
+I'm readFileSync method of fs module.

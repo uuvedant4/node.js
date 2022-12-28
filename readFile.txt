@@ -1,0 +1,1 @@
+I'm readFile method of fs module.
