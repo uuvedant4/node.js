@@ -5,6 +5,9 @@
 3. Third party
 */
 const fs = require("fs");
+const path = require("path");
+const os = require("os");
+const pokemon = require("pokemon");
 // const { readFileSync } = require("fs");
 
 // Example 1 (Execute at last)
@@ -32,4 +35,24 @@ fs.writeFileSync(
   "I'm fs module's writeFileSync method."
 );
 
-// 36:00
+// Example 5 (Path module)
+const ext = path.extname("/node.js/index.js");
+console.log(ext);
+console.log("DIRNAME: ", __dirname);
+console.log("FILENAME: ", __filename);
+const baseFolder = path.basename("c:/Users/Vedan/Desktop/node.js");
+console.log(baseFolder);
+const baseDir = path.dirname("c:/Users/Vedan/Desktop/node.js");
+console.log(baseDir);
+const filePath = path.join(__dirname, "index.js");
+console.log(filePath);
+
+// Example 6 (OS module)
+console.log(os.freemem());
+console.log(os.totalmem());
+console.log(os.hostname());
+console.log(os.homedir());
+
+// Example 7 (Third party modules)
+console.log(pokemon.random());
+console.log(pokemon.all());

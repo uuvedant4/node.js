@@ -26,5 +26,8 @@
   "homepage": "https://github.com/uuvedant4/node.js#readme",
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "pokemon": "^2.3.3"
   }
 }
